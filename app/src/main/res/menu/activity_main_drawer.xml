@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pro_update"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="Update Profile" />
+        <item
+            android:id="@+id/nav_adpost"
+            android:icon="@drawable/ic_menu_add"
+            android:title="Post New Ad" />
+        <item
+            android:id="@+id/nav_my_post"
+            android:icon="@drawable/ic_menu_mypost"
+            android:title="My Posts" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_fvrt"
+                android:title="Favourites" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AdPost"
+    tools:showIn="@layout/app_bar_ad_post">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:background="@color/myBlue"
+        android:rotation="45" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/gradient"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-45dp"
+            android:background="@drawable/circle"
+            android:padding="20dp"
+            android:src="@drawable/flat1" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
+
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/thana"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:background="@drawable/background"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text="Area"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/background"
+                            android:spinnerMode="dialog"
+                            android:theme="@style/Spinner" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:background="@drawable/background"
+                            android:gravity="center"
+                            android:paddingLeft="21dp"
+                            android:paddingRight="21dp"
+                            android:text="For"
+                            android:textSize="20dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/background"
+                            android:spinnerMode="dialog"
+                            android:theme="@style/Spinner" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background"
+                        android:hint="Address"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/noofrooms"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background"
+                        android:hint="No of rooms"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background"
+                        android:hint="Rent"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background"
+                        android:gravity="start"
+                        android:hint="Description"
+                        android:paddingLeft="15dp"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/date_view"
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Date"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/date_chooser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="21dp"
+                            android:paddingRight="21dp"
+                            android:text="Choose a Date" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/slctLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Location"
+                        android:paddingRight="15dp"
+                        android:paddingLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/str_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:textSize="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Add a photo"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp" />
+
+                        <Button
+                            android:id="@+id/choose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text="Choose an Image" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgeView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card1"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="-65dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient"
+                android:text="DONE"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
